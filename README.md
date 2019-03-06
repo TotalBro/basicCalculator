@@ -1,0 +1,1 @@
+Basic calculator made for the final javascript section on The Odin Project - will likely be buggy as a result.
