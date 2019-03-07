@@ -28,26 +28,37 @@ describe('#multiply', function() {
 		expect(s).toEqual(6);
 	});
 	it('multiplies negative numbers', function() {
-		s = calculator.subtract(-2,-3);
+		s = calculator.multiply(-2,-3);
 		expect(s).toEqual(6);
 	});
 });
 
 describe('#divide', function() {
-	xit('divides numbers', function() {
+	it('divides numbers', function() {
 		s = calculator.divide(4,2);
 		expect(s).toEqual(2);
 	});
-	xit('divides negative numbers', function() {
+	it('divides negative numbers', function() {
 		s = calculator.divide(-4,-2);
 		expect(s).toEqual(2);
 	});
-	xit('rounds to two decimal places', function() {
-		s = calculator.divide(3,4);
-		expect(s).toEqual(0.75);
+	it('rounds to two decimal places', function() {
+		s = calculator.divide(5,6);
+		expect(s).toEqual(0.83);
 	});
-	xit('disallows divide by zero', function() {
+	it('disallows divide by zero', function() {
 		s = calculator.divide(4,0);
 		expect(s).toEqual("Can't divide by zero!");	
+	});
+});
+
+describe('#operate', function() {
+	it('handles large strings', function() {
+		s = calculator.operate('10+11+12+13');
+		expect(s).toEqual(46);
+	});
+	it('accepts negative numbers', function() {
+		s = calculator.operate('-4+3');
+		expect(s).toEqual(-1);
 	});
 });

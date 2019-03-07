@@ -1,0 +1,31 @@
+body {
+    background-color: #cccccc;
+}
+
+ul {
+    list-style-type: none;
+    display: grid;
+    flex: 25%;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.calcContain {
+    display: flex;
+}
+
+.display {
+    display: flex;
+    border: 1px solid black;
+    font-size: 2em;
+    height: 2em;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.button {
+    height: 4em;
+    width: 4em;
+    padding: 0;
+    margin: 0;
+}

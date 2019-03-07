@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <head>
     <script src="calculator.js"></script>
+    <link rel="stylesheet" type="text/css" href="calculator.css">
 </head>
 <body>
+    <div class = "display" id = "display"></div>
     <div class = "calcContain">
-        <div class = "display"></div>
         <ul class = "btnList"></ul>
     </div>
-</body>>
+<script>
+    let DISPLAY;
+    let recentReturn = false;
+    window.onload = () => {setDisplay();makeButtons();}
+</script>    
+</body>
 </html>
