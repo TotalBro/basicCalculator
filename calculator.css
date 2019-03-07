@@ -1,12 +1,15 @@
 body {
     background-color: #cccccc;
+    font-family: sans-serif;
 }
 
 ul {
     list-style-type: none;
     display: grid;
-    flex: 25%;
     grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    padding-top: 10px;
 }
 
 .calcContain {
@@ -15,17 +18,31 @@ ul {
 
 .display {
     display: flex;
-    border: 1px solid black;
+    border: 3px double black;
     font-size: 2em;
     height: 2em;
-    width: 100%;
+    width: 11em;
     align-items: center;
     justify-content: flex-end;
+    padding-right: 1em;
+    color: #dedede;
+    font-weight: bold;
+    text-shadow: 
+        -1px -1px 0 #000,
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000; 
 }
 
 .button {
-    height: 4em;
-    width: 4em;
-    padding: 0;
-    margin: 0;
+    width: 2em;
+    height: 2em;
+    background: #bcbcbc;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 2em;
+}
+
+.button:hover {
+    background: #ababab;
 }
